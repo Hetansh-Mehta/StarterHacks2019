@@ -172,6 +172,13 @@ public class MapsView extends FragmentActivity implements OnMapReadyCallback {
 
         // Prompt the user for permission.
         getLocationPermission();
+        map.addMarker(new MarkerOptions()
+                .position(new LatLng(43.455280, -80.505836))
+                .title("Grand River Hospital"));
+
+        map.addMarker(new MarkerOptions()
+                .position(new LatLng(43.432629, -80.512352))
+                .title("St. Mary's General Hospital"));
 
         // Turn on the My Location layer and the related control on the map.
         updateLocationUI();
