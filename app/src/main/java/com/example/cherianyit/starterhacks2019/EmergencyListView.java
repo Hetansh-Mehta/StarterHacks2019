@@ -8,6 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.content.Context;
+import android.view.View;
+import android.view.View.OnClickListener;
+
+
+import android.widget.ImageButton;
 
 public class EmergencyListView extends AppCompatActivity {
 
@@ -17,8 +26,9 @@ public class EmergencyListView extends AppCompatActivity {
         setContentView(R.layout.activity_emergency_list_view);
     }
 
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
+    private  void lauchActivity() {
+        Intent intent = new Intent(this, MapsView.class);
+        startActivity(intent);
     }
 
 
